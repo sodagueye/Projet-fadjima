@@ -42,6 +42,7 @@ export default function Inscription() {
                         </div>
                     </div>
                     <p className='mt-4 mb-4'>Date de naissance</p>
+                    <input type="date" className='bg-transparent border border-gray-400'/>
                     <div className='flex gap-5'>
                         <div className="flex flex-col">
                             <p className="mb-2">E-mail</p>
