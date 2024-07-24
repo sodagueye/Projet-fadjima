@@ -1,18 +1,19 @@
 import React from 'react'
-//  import { MdOutlineTranslate } from "react-icons/md";
+
+import { RiTranslate2 } from "react-icons/ri";
 
 
 function Navbar() {
   return (
    
-    <nav class="bg-white w-full">
+    <nav class="bg-white w-full font-poppins">
       <div class="mx-auto max-w-7xl px-2 sm:px-6 lg:px-8">
         <div class="relative flex h-16 items-center justify-between">
           {/* <div class="absolute inset-y-0 left-0 flex items-center sm:hidden">
           </div> */}
           <input placeholder=' Recherchez n importe  quoi ici' className=' bg-slate-200 ' style={{width:"440px", height:"38px"}}></input>
           <div className='flex'>
-          {/* <MdOutlineTranslate/>   */}
+        <RiTranslate2/>   
             <select name="" id="">
             <option value="">Français(France)</option>
             <option value="">Anglais</option>

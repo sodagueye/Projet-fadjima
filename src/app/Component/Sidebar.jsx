@@ -2,42 +2,43 @@
 import React from 'react';
 import Image from 'next/image';
 import { PiCalendarPlusBold } from "react-icons/pi";
+import { MdOutlineSpaceDashboard } from "react-icons/md";
 // import { CgMoreVerticalAlt } from "react-icons/cg";
 import Link from 'next/link';
 
 export default function Sidebar() {
     return (
         <div>
-            <div className='w-64 bg-[#283342] h-screen relative'>
+            <div className='w-64 bg-[#283342] h-screen relative font-poppins'>
                 <div className='flex gap-4 p-4 bg-black'>
                     <div className="relative">
-                        <Image src="/cart1.png" alt="Cart Image" width={40} height={40} layout="fixed" objectFit="cover" className="rounded-lg" />
+                        <img src="/cart1.png" alt="Cart Image" style={{width:"39px", height:"39px"}}  layout="fixed" objectFit="cover" className="rounded-lg" />
                     </div>
                     <div>
-                        <h1 className="text-2xl text-white font-bold">FADJI-MA</h1>
+                        <h1 className="text-2xl text-white font-bold font-poppins text-lg">Fadj-Ma</h1>
                     </div>
-                    {/* <CgMoreVerticalAlt className='ext-white'/> */}
+           
 
                 </div>
-                <div className='flex gap-2 items-center'>
-                    <div className="relative rounded-full w-20 h-20 mt-5">
-                        <Image src="/cart.jpeg" alt="Image du panier" layout="fill" objectFit="cover" className="rounded-full" />
+                <div className='flex gap-5  items-center'>
+                    <div className="relative rounded-full rounded-full mt-5 ms-2">
+                        <img src="/cart.jpeg" alt="Image du panier" layout="fill" style={{width:"42px", height:"42px"}} objectFit="cover" className="rounded-full" />
                     </div>
-                    <div>
-                        <p className="text-white px-4 py-2">Modou Fall</p>
-                        <span className='text-yellow-500'>Administrateur</span>
+                    <div className='mt-2'>
+                        <p className="text-white mt-2 text-sm'">Modou Fall</p>
+                        <span className='text-yellow-500  text-xs'>Administrateur</span>
                     </div>
                     {/*  */}
                 </div>
 
-                <div className='hover:bg-[#009099] text-white flex ms-3  mt-5 gap-2 p-3'>
-                    {/* <MdOutlineSpaceDashboard className='mt-1' /> */}
+                <div className='hover:bg-[#009099] text-white flex ms-3  mt-5 gap-2 p-3 text-sm'>
+                   <MdOutlineSpaceDashboard className='mt-1' /> 
                     <Link href="/Component/Home">
                         Tableau de bord
                     </Link>
                 </div>
 
-                <div className='hover:bg-[#009099] text-white flex ms-3  mt-5 gap-2 p-3'>
+                <div className='hover:bg-[#009099] text-white flex ms-3  mt-5 gap-2 p-3 text-sm'>
                     <PiCalendarPlusBold className='mt-1' />
                     <Link href="/Component/Medicament">Médicaments</Link>
                 </div>

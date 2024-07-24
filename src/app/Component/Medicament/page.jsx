@@ -15,7 +15,6 @@ export default function Medicament() {
     const closeModal = () => {
         setModalOpen(false);
     };
-
     return (
         <div className='pt-5 '>
             <div className='flex'>
@@ -25,7 +24,7 @@ export default function Medicament() {
                     <div className='flex justify-between m-5'>
                         <div>
                             <div className='mt-5'>
-                                <h1 className='font-bold'>médicaments (298)</h1>
+                                <h1 className='font-bold font-poppins'>médicaments (298)</h1>
                                 <p>Liste des médicaments disponibles à la vente.</p>
                             </div>
                             <div className=''>
@@ -47,7 +46,7 @@ export default function Medicament() {
                                 </button>
                             </div>
                             <div className="">
-                                <select name="" id="" className='bg-gray-200' style={{ width: "230px", height: "50px" }}>
+                                <select name="" id="" className='bg-gray-200 ' style={{ width: "230px", height: "50px" }}>
                                     <option value=""> Selectionnez un groupe</option>
                                     <option value="">Antibiotiques </option>
                                     <option value="">Antihypertenseurs </option>
